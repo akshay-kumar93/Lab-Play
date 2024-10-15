@@ -1,0 +1,52 @@
+<!-- Exam Section -->
+ <div class="parrent">
+  <section id="exam" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Sample Exam</h2>
+      <form>
+        <!-- Question 1 -->
+        <div class="exam-question">
+          <h5>{{allQuestion?.id}}){{allQuestion?.question}}</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1a" value="A">
+            <label class="form-check-label" for="q1a">
+              A) {{allQuestion?.option1}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1b" value="B">
+            <label class="form-check-label" for="q1b">
+              B) {{allQuestion?.option2}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1c" value="C">
+            <label class="form-check-label" for="q1c">
+              C) {{allQuestion?.option3}}
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1d" value="D">
+            <label class="form-check-label" for="q1d">
+              D) {{allQuestion?.option4}}
+            </label>
+          </div>
+        </div>
+        <!-- Add more questions similarly -->
+
+        <!-- Submit Button -->
+        <a class="btn btn-primary" routerLink="/reult" *ngIf="allQuestion?.id==5">Submit Exam</a>
+      </form>
+      <div>
+        <button  class="btn" (click)="pre()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+        <button class="btn" (click)="next()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+      </div>
+      <button class="btn btn-primary" (click)="saveContinue()">Save and Continue</button>
+    </div>
+  </section>
+
+ <div class="clid">
+  <app-side-bar></app-side-bar>
+ </div>
+ </div>
+

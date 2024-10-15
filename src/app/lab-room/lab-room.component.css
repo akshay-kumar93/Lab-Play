@@ -1,0 +1,83 @@
+.parrent {
+  width: 100%;
+  height: 100%;
+  background-color: #800020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  padding: 1%;
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 1%;
+  background-color: #96CEB4;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.knife {
+  position: relative;
+  animation: slideLeft 2s forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -150px;
+    /* Adjust as necessary to slide the knife to the left */
+  }
+}
+
+
+/* .btn-default {
+  color: white;
+  background-color: blue;
+
+} */
+
+.btn-change {
+  color: Red;
+  background-color: white;
+}
+
+
+/* Descrption */
+
+.Descrption{
+  background: #1E201E;
+  border-radius: 2%;
+  color: black;
+  margin: 2%;
+  width: 50%;
+  height: auto;
+}
+
+.m-4 ol li {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.m-4 ol li:hover {
+  background-color: #f0e68c; /* Highlight color on hover */
+}
+
+.m-4 ol li div {
+  position: relative;
+  z-index: 1;
+}
+
+.m-4 ol li p {
+  margin: 5px 0 0 20px;
+}

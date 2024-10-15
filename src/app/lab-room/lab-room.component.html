@@ -1,0 +1,138 @@
+<app-header></app-header>
+<div class="parrent">
+
+  <div class="child">
+    <div *ngIf="cuts === true">
+      <img src="/assets/img/starch/potato.png" alt="Potato">
+      <img src="/assets/img/starch/Knife.png" [ngClass]="[bntStyle]" alt="Knife">
+      <button name="Save" (click)="onKnifeSlideEnd()" class="btn btn-primary">Submit</button>
+
+    </div>
+
+    <div *ngIf="cuts === false && result ==false">
+      <div style="margin-left: 40px;" *ngIf="drop==true">
+        <img src="/assets/img/starch/dropper.gif" alt="dropper">
+      </div>
+      <img src="/assets/img/starch/slice.png" alt="Sliced Potato">
+
+      <img *ngIf="drop ==false" src="/assets/img/starch/Iodine solution.png" class="mx-2" alt="Iodine Solution">
+      <button *ngIf="drop ==false && result ==false &&cuts === false" (click)="dropper()"
+      class="btn btn-primary">Drop</button>
+    </div>
+
+    <div>
+      <div *ngIf="result ==true" class="d-flex ">
+        <img  src="/assets/img/starch/res.png" alt="dropper">
+        <p>result</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="Descrption">
+    <div class="m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4>Materials Needed</h4>
+        <ol>
+          <li>Food samples (e.g., potato, rice, bread, etc.)</li>
+          <li>Iodine solution</li>
+          <li>Dropper</li>
+          <li>White tile or clean plate</li>
+          <li>Knife (for cutting food samples)</li>
+          <li>Water (optional, for diluting or preparing samples)</li>
+        </ol>
+      </div>
+    </div>
+    <div class=" m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4>Procedure 🧪</h4>
+        <ol>
+          <li>
+            <div><h6>Prepare the Food Samples:</h6></div>
+            <p>🐭Cut the food items into small pieces if necessary.</p>
+          </li>
+          <li>
+            <div><h6>Place the Food Samples:</h6></div>
+            <p>🐭Arrange the food samples on a white tile or a clean plate.
+               Ensure they are spaced out to avoid mixing.</p>
+          </li>
+          <li>
+            <div><h6>Apply the Iodine Solution:</h6></div>
+            <p>🐭Using a dropper, add a few drops of iodine solution
+               to each food sample.</p>
+          </li>
+          <li>
+            <div><h6>Observe the Reaction:</h6></div>
+            <p>🐭Observe any color change in the food samples
+               where the iodine solution was applied.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4>Expected Results</h4>
+
+        <ol>
+          <h6>😀Presence of Starch:</h6>
+          <p>If the food item contains starch, the iodine solution
+            will change color from brown to a dark blue or black.</p>
+          <h6>😒Absence of Starch:</h6>
+          <p> If the food item does not contain starch, there will be no
+             significant color change; the iodine solution will remain brown.</p>
+        </ol>
+      </div>
+
+    </div>
+    <div class="m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4>Explanation</h4>
+        <ol>
+          <p>🤷‍♀️🤷 Starch reacts with iodine to form a blue-black complex, which is
+            a clear indicator of the presence of starch in the food item.</p>
+        </ol>
+      </div>
+
+    </div>
+    <div class="m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4>Example Observations</h4>
+        <ol>
+          <li>
+            <div><h6>🥔 Potato:</h6></div>
+            <p>🐭The iodine solution turns dark blue/black 🟤⚫, indicating a high starch content.</p>
+          </li>
+          <li>
+            <div><h6>🍞 Bread:</h6></div>
+            <p>🐭The iodine solution turns dark blue/black 🟤⚫, indicating the presence of starch.</p>
+          </li>
+          <li>
+            <div><h6>🍚Rice:</h6></div>
+            <p>🐭The iodine solution turns dark blue/black 🟤⚫, indicating the presence of starch.</p>
+          </li>
+          <li>
+            <div><h6>🍎Apple</h6></div>
+            <p>🐭 Little to no color change 😒, indicating low or no starch content.</p>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+    <div class="m-4 bg-light rounded-2">
+      <div class="p-2">
+        <h4 class="text-danger"> 💀 Safety Precautions</h4>
+        <ol>
+          <p>🐭Handle the iodine solution carefully, as it can stain clothes and skin.</p>
+          <p>🐭Use a clean dropper for each food sample to avoid cross-contamination.</p>
+          <p>🐭Wash your hands 🧼 after completing the experiment.</p>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+
+<app-footer></app-footer>

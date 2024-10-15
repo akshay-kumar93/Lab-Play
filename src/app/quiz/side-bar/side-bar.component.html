@@ -1,0 +1,14 @@
+<!-- Exam Section -->
+<div class="card bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">All Questions</div>
+  <div class="card-body" *ngFor="let q of allQuestions">
+    <button *ngIf="q.touched == false && q.attempted == false" class="btn text-white bg-danger" (click)="btn(q.id)">{{q.id}}</button>
+    <button *ngIf="q.touched == true && q.attempted == false" class="btn text-white bg-warning">{{q.id}}</button>
+    <button *ngIf="q.touched == true && q.attempted==true" class="btn text-white bg-primary">{{q.id}}</button>
+  </div>
+  <div class="instruction">
+    <div class="text-white bg-danger">UnTouched</div>
+    <div class="text-white bg-primary">Touched</div>
+    <div class="text-white bg-warning">Attempted</div>
+  </div>
+</div>

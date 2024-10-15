@@ -1,0 +1,27 @@
+.card-body div{
+  width: 30px;
+  text-align: center;
+}
+.card-body{
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.instruction{
+  display: flex;
+}
+.instruction div{
+  width: 100px;
+  text-align: center;
+}
+
+/* .un{
+  background-color: rgb(244, 244, 187);
+}
+.to{
+  background-color: rgb(99, 99, 255);
+}
+.att{
+  background-color: rgb(54, 85, 142);
+} */
